@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+import "basics/date.proto";
+
 message Person{
     string name = 1;
     repeated string middle_names = 2;
@@ -14,4 +16,6 @@ message Person{
     }
 
     repeated Address addresses = 4;
+
+    Date date = 5;
 }
