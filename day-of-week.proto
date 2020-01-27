@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+message DayOfWeek{
+
+    enum Day{
+        UNDEFINED_DAY = 0;
+        SEGUNDA = 1;
+        TERCA = 2;
+        QUARTA = 3;
+        QUINTA = 4;
+        SEXTA = 5;
+        SABADO = 6;
+        DOMINGO = 7;
+    }
+
+    Day day_of_week = 1;
+
+}
