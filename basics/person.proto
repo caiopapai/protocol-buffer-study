@@ -2,6 +2,8 @@ syntax = "proto3";
 
 import "basics/date.proto";
 
+package person;
+
 message Person{
     string name = 1;
     repeated string middle_names = 2;
@@ -17,5 +19,5 @@ message Person{
 
     repeated Address addresses = 4;
 
-    Date date = 5;
+    personal.date.Date date = 5;
 }
